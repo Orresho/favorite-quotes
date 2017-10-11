@@ -1,3 +1,7 @@
+import { TabsPage } from './../pages/tabs/tabs';
+import { SettingsPage } from './../pages/settings/settings';
+import { QuotesPage } from './../pages/quotes/quotes';
+import { QuotePage } from './../pages/quote/quote';
 import { LibraryPage } from './../pages/library/library';
 import { FavoritesPage } from './../pages/favorites/favorites';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,7 +16,12 @@ import { MyApp } from './app.component';
   declarations: [
     MyApp,
     FavoritesPage,
-    LibraryPage
+    LibraryPage,
+    QuotePage,
+    QuotesPage,
+    SettingsPage,
+    TabsPage
+    
   ],
   imports: [
     BrowserModule,
@@ -22,7 +31,11 @@ import { MyApp } from './app.component';
   entryComponents: [
     MyApp,
     FavoritesPage,
-    LibraryPage
+    LibraryPage,
+    QuotePage,
+    QuotesPage,
+    SettingsPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
