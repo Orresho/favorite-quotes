@@ -19,4 +19,11 @@ export class QuotesService {
         // we dont edit the original but rather the copy we recieved
         return this.favoriteQuotes.slice();
     }
+
+    
+    isQouteFavorite(quote: Quote){
+        return this.favoriteQuotes.find((quoteEl: Quote) => {
+            return quoteEl.id == quote.id;
+        });
+    }
 }
